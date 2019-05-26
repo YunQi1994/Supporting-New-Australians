@@ -5,8 +5,8 @@ account: tongguoshuanlou
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 925003
-bundleId: 2096433
+bundleId: 2102887
 url: https://tongguoshuanlou.shinyapps.io/Search_and_Comparison_TK/
-when: 1558360256.20262
+when: 1558573013.40224
 asMultiple: FALSE
 asStatic: FALSE

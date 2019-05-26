@@ -1,24 +1,12 @@
 
 ###################################
-#Hair - Search and Comparison Plan#
+#Hair - Search and Comparison #
 ###################################
 
 
 
 
-# split <- list('Ferntree GullyUpper Ferntree Gully', 'Surrey HillsCanterbury','Surrey HillsMont Albert')
-# update_suburb_name <- function(suburb_name){
-#   if (suburb_name == split[1]){
-#     suburb_name = 'Upper Ferntree Gully'
-#   }
-#   if (suburb_name == split[2]){
-#     suburb_name = 'Surrey Hills Canterbury'
-#   }
-#   if (suburb_name == split[3]){
-#     suburb_name = 'Surrey Hills Mont Albert'
-#   }
-#   return(suburb_name)
-# }
+
 
 
 
@@ -357,7 +345,7 @@ server = function(input, output, session){
             <ul style="list-style-type: none;">
                 <li><p>> Low - $0 to $743</p></li>
                 <li><p>> Medium Low - $744 to $1,431</p></li>
-                <li><p>> Medium High - $,432 to $,433</p></li>
+                <li><p>> Medium High - $1432 to $2433</p></li>
                 <li><p>> High - $2,434 +</p></li>
 
             </ul>
@@ -452,7 +440,7 @@ server = function(input, output, session){
         targetGroups = 'Hair',
         options = searchFeaturesOptions(
           position = 'topleft',
-          textPlaceholder = 'First Suburbs', # default  text
+          textPlaceholder = 'Search Suburbs', # default  text
           zoom=10, openPopup = TRUE, firstTipSubmit = TRUE,
           collapsed = FALSE, autoCollapse = FALSE, hideMarkerOnCollapse = TRUE )) %>%
       ##################################################################################
@@ -461,7 +449,7 @@ server = function(input, output, session){
     addLegend("bottomright", 
               colors =c("#DCE8FF",  "#A0C0F6", "#81A4DF", "#6289CD", "#416FBD	"),
               labels= c("Less","","","", "More"),
-              title= "Market Size in Melbourne",
+              title= "Market Size",
               opacity = 1)
     
   }

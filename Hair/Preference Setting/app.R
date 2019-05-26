@@ -327,7 +327,7 @@ ui <- fluidPage(
                        )),
                        div( style = 'margin-left: -23%; margin-bottom: -2%;border: 1px ;background-color: grey; width: 1px; height: 30px; display:inline-block'),
                        #h5(hr(style = 'margin-left: -10% ;border: 1px solid black; width: 50%')),
-                       a(style = 'margin-right: -20%; font-size: 2rem; margin-left: 5%; color: #3A479B' ,"Click here to explore!", href="http://www.demeter.gq/Home/MiddleEasternCuisine", target="_top")
+                       a(style = 'margin-right: -20%; font-size: 2rem; margin-left: 5%; color: #3A479B' ,"Click here to explore!", href="http://www.demeter.gq/Home/Hairdressing", target="_top")
              )
              
              
@@ -431,13 +431,13 @@ server <- function(input, output, session){
       title = "What is Customer Size?",
       HTML('<div id="dialog" class="window" style="color: black">
 
-            <p><span style="font-weight: bolder; font-size: 18px">Customer Size:</span> The ratio from population/number of hairdressing business or restaurants in specific cuisine (Middle eastern/Turkish/Lenbanese)</p>
+            <p><span style="font-weight: bolder; font-size: 18px">Customer Size:</span> The ratio from population/number of hairdressing business or restaurants in specific cuisine (Middle eastern/Turkish/Lebanese)</p>
             <p><span style="font-weight: bolder; font-size: 18px">Income Level:</span>  Weekly household income of a suburb</p>
 
             <ul style="list-style-type: none;">
                 <li><p>> Low - $0 to $743</p></li>
                 <li><p>> Medium Low - $744 to $1,431</p></li>
-                <li><p>> Medium High - $,432 to $,433</p></li>
+                <li><p>> Medium High - $1432 to $2433</p></li>
                 <li><p>> High - $2,434 +</p></li>
 
             </ul>

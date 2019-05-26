@@ -140,7 +140,6 @@ ui = fluidPage(
   ####### keep app running #####
   setBackgroundColor('#F0F4FF'),
   shinyjs::useShinyjs(),
-  useShinyalert(),
   tags$br(),
   # checkboxInput('recommendation', HTML({paste('<p class="shinyjs-hide" style="color:#D4AF37; margin-top:-5px; font-size:20px"><strong>Recommended Suburbs</strong></p>')}), FALSE),
   
@@ -301,7 +300,7 @@ ui = fluidPage(
                                                              div(id = 'highlevel4', htmlOutput(outputId = 'existing_business'))
                                                       ),
                                                       column(4,
-                                                             div(HTML({paste('<p style = "font-size:1.5rem; color:black; font-weight:bold; text-align: center;margin-left: -100px; margin-right: -100px">Lenbanese Restaurants', '</p>')}))
+                                                             div(HTML({paste('<p style = "font-size:1.5rem; color:black; font-weight:bold; text-align: center;margin-left: -100px; margin-right: -100px">Lebanese Restaurants', '</p>')}))
                                                       ),
                                                       column(4,
                                                              div(id = 'matchresult6', htmlOutput(outputId = 'existing_business_match'))
@@ -338,13 +337,13 @@ server = function(input, output, session){
       title = "What is Customer Size?",
       HTML('<div id="dialog" class="window" style="color: black">
 
-            <p><span style="font-weight: bolder; font-size: 18px">Customer Size:</span> The ratio from population/number of hairdressing business or restaurants in specific cuisine (Middle eastern/Turkish/Lenbanese)</p>
+            <p><span style="font-weight: bolder; font-size: 18px">Customer Size:</span> The ratio from population/number of hairdressing business or restaurants in specific cuisine (Middle eastern/Turkish/Lebanese)</p>
             <p><span style="font-weight: bolder; font-size: 18px">Income Level:</span>  Weekly household income of a suburb</p>
 
             <ul style="list-style-type: none;">
                 <li><p>> Low - $0 to $743</p></li>
                 <li><p>> Medium Low - $744 to $1,431</p></li>
-                <li><p>> Medium High - $,432 to $,433</p></li>
+                <li><p>> Medium High - $1432 to $2433</p></li>
                 <li><p>> High - $2,434 +</p></li>
 
             </ul>
@@ -405,7 +404,7 @@ server = function(input, output, session){
         targetGroups = 'Lebanese',
         options = searchFeaturesOptions(
           position = 'topleft',
-          textPlaceholder = 'First Suburbs', # default  text
+          textPlaceholder = 'Search Suburbs', # default  text
           zoom=10, openPopup = TRUE, firstTipSubmit = TRUE,
           collapsed = FALSE, autoCollapse = FALSE, hideMarkerOnCollapse = TRUE )) %>%
       ##################################################################################
@@ -414,7 +413,7 @@ server = function(input, output, session){
     addLegend("bottomright", 
               colors =c("#DCE8FF",  "#A0C0F6", "#81A4DF", "#6289CD", "#416FBD	"),
               labels= c("Less","","","", "More"),
-              title= "Market Size in Melbourne",
+              title= "Market Size",
               opacity = 1)
     
   }

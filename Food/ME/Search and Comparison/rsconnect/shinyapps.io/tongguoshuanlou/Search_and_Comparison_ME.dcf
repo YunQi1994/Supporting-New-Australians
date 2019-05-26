@@ -5,8 +5,8 @@ account: tongguoshuanlou
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 924990
-bundleId: 2096656
+bundleId: 2102890
 url: https://tongguoshuanlou.shinyapps.io/Search_and_Comparison_ME/
-when: 1558365081.85535
+when: 1558573214.92132
 asMultiple: FALSE
 asStatic: FALSE

@@ -5,8 +5,8 @@ account: tongguoshuanlou
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 924955
-bundleId: 2093571
+bundleId: 2102883
 url: https://tongguoshuanlou.shinyapps.io/Default_Map_Hair/
-when: 1558188887.83114
+when: 1558572895.97087
 asMultiple: FALSE
 asStatic: FALSE

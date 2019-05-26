@@ -146,7 +146,7 @@ ui = fluidPage(
                                                     leafletOutput(outputId = "map", width = '100%', height = '560px') %>% withSpinner(type = '6'),
                                                     div(id = 'controls', uiOutput("reset"))
             ),
-            a(style = 'font-size: 1.5rem; color: #3A479B' ,"Comparing suburbs? Click Here", href="http://www.demeter.gq/Home/CompareME", target="_top")
+            a(style = 'font-size: 1.5rem; color: #3A479B' ,"Comparing suburbs? Click Here", href="http://www.demeter.gq/Home/CompareHD", target="_top")
             ), # return button
             # column(1, div(id = 'zoomed', style="margin-top: 100px; float: right", htmlOutput(outputId = 'detail'))), # zoomed in info boses. get information from output$detail
             column(4, offset = 0, 
@@ -292,7 +292,7 @@ server = function(input, output, session){
             <ul style="list-style-type: none;">
                 <li><p>> Low - $0 to $743</p></li>
                 <li><p>> Medium Low - $744 to $1,431</p></li>
-                <li><p>> Medium High - $,432 to $,433</p></li>
+                <li><p>> Medium High - $1432 to $2433</p></li>
                 <li><p>> High - $2,434 +</p></li>
 
             </ul>
